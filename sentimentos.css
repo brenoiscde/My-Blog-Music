@@ -1,0 +1,324 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+
+.sentimentos_intro {
+    width: min(1200px, calc(100% - 48px));
+    margin: 60px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.intro_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.categoria,
+.section_titulo span {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro_texto h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.intro_texto p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+}
+
+.intro_imagem img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.sentimentos_section {
+    background-color: #f7f5f2;
+    padding: 80px 24px;
+}
+
+.section_titulo {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section_titulo h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(30px, 4vw, 45px);
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.section_titulo p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+.sentimentos_grid {
+    width: min(1100px, 100%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.sentimento_card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background-color: white;
+    padding: 15px;
+}
+
+.sentimento_card img {
+    width: 45%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card_texto {
+    flex: 1;
+}
+
+.card_texto span {
+    font-size: 10px;
+    color: chocolate;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card_texto h3 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.card_texto p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+.cerebro_section {
+    width: min(1100px, calc(100% - 48px));
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.cerebro_imagem img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cerebro_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cerebro_texto span {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cerebro_texto h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.cerebro_texto p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+.frase_final {
+    text-align: center;
+    background-color: #f7f5f2;
+    padding: 75px 24px;
+}
+
+.frase_final h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(25px, 4vw, 40px);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.frase_final p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: min(1200px, calc(100% - 48px));
+    margin: 30px auto;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+footer a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+
+    .sentimentos_intro {
+        gap: 30px;
+        margin: 40px auto 70px;
+    }
+
+    .sentimento_card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sentimento_card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .cerebro_section {
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .sentimentos_intro {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        margin: 30px auto 60px;
+        gap: 25px;
+    }
+
+    .intro_texto h2 {
+        font-size: 42px;
+    }
+
+    .intro_texto p {
+        font-size: 14px;
+    }
+
+    .intro_imagem img {
+        height: 280px;
+    }
+
+    .sentimentos_section {
+        padding: 55px 16px;
+    }
+
+    .section_titulo {
+        margin-bottom: 35px;
+    }
+
+    .sentimentos_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sentimento_card {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .sentimento_card img {
+        width: 40%;
+        height: 160px;
+    }
+
+    .card_texto h3 {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    .card_texto p {
+        font-size: 12px;
+    }
+
+    .cerebro_section {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        margin: 60px auto;
+        gap: 30px;
+    }
+
+    .cerebro_imagem img {
+        height: 280px;
+    }
+
+    .cerebro_texto h2 {
+        font-size: 36px;
+    }
+
+    .frase_final {
+        padding: 55px 20px;
+    }
+
+    footer {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

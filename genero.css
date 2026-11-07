@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.hero_generos {
+    width: min(1200px, calc(100% - 48px));
+    margin: 50px auto 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.hero_texto span,
+.section_title span,
+.brasil_texto > span {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero_texto h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(45px, 5vw, 75px);
+    line-height: 1.1;
+    font-weight: 300;
+}
+
+.hero_texto p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.hero_texto a {
+    color: chocolate;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.hero_imagem img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+
+.explorar {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto 100px;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section_title h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.section_title p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.generos_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 25px;
+}
+
+.genero_card {
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genero_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.genero_card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card_content {
+    padding: 22px;
+}
+
+.card_content span {
+    color: chocolate;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.card_content h3 {
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+.card_content p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.card_content small {
+    display: block;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.destaque_brasil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f5f1ed;
+    margin: 0 auto 100px;
+    width: min(1200px, calc(100% - 48px));
+}
+
+.brasil_imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+}
+
+.brasil_texto {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brasil_texto h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.brasil_texto > p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.brasil_estilos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.brasil_estilos h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.brasil_estilos p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+.final_generos {
+    width: min(800px, calc(100% - 48px));
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.final_generos h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.final_generos p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.final_generos a {
+    color: chocolate;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: min(1200px, calc(100% - 48px));
+    margin: 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+footer a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+
+    .hero_generos {
+        gap: 25px;
+    }
+
+    .hero_imagem img {
+        height: 350px;
+    }
+
+    .generos_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brasil_texto {
+        padding: 30px;
+    }
+
+    .brasil_texto h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero_generos {
+        grid-template-columns: 1fr;
+        width: calc(100% - 32px);
+        margin: 30px auto 65px;
+        gap: 25px;
+    }
+
+    .hero_texto h2 {
+        font-size: 48px;
+    }
+
+    .hero_imagem img {
+        height: 250px;
+    }
+
+    .explorar {
+        width: calc(100% - 32px);
+        margin-bottom: 65px;
+    }
+
+    .section_title h2 {
+        font-size: 25px;
+    }
+
+    .generos_grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .genero_card img {
+        height: 230px;
+    }
+
+    .destaque_brasil {
+        grid-template-columns: 1fr;
+        width: calc(100% - 32px);
+        margin-bottom: 65px;
+    }
+
+    .brasil_imagem img {
+        height: 250px;
+        min-height: auto;
+    }
+
+    .brasil_texto {
+        padding: 25px;
+    }
+
+    .brasil_texto h2 {
+        font-size: 30px;
+    }
+
+    .brasil_estilos {
+        grid-template-columns: 1fr;
+    }
+
+    .final_generos {
+        width: calc(100% - 32px);
+        margin-bottom: 65px;
+    }
+
+    .final_generos h2 {
+        font-size: 29px;
+    }
+
+    footer {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

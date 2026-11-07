@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+.historia {
+    width: min(1100px, calc(100% - 48px));
+    margin: 40px auto;
+}
+
+
+.historia_intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 65px;
+}
+
+.categoria {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.historia_intro h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(55px, 9vw, 110px);
+    text-align: center;
+    font-weight: 400;
+}
+
+.historia_intro p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.historia_intro img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.periodo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 75px 0;
+}
+
+.periodo_texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.periodo img{
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.numero {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.periodo_texto h3 {
+    font-size: 27px;
+    line-height: 1.3;
+}
+
+.periodo_texto p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.periodo.invertido {
+    flex-direction: row-reverse;
+}
+
+.conclusao {
+    margin: 80px 0 60px;
+    padding: 35px;
+    background-color: #f5f1ed;
+    border-left: 4px solid chocolate;
+}
+
+.conclusao h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.conclusao p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.conclusao a {
+    color: chocolate;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.conclusao a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: min(1100px, calc(100% - 48px));
+    margin: 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+footer a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .historia {
+        width: calc(100% - 40px);
+    }
+
+    .historia_intro img {
+        height: 300px;
+    }
+
+    .periodo {
+        gap: 25px;
+        margin: 55px 0;
+    }
+
+    .periodo img {
+        width: 42%;
+        height: 230px;
+    }
+
+    .periodo_texto h3 {
+        font-size: 22px;
+    }
+
+    .periodo_texto p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .historia {
+        width: calc(100% - 32px);
+        margin: 25px auto;
+    }
+
+    .historia_intro {
+        gap: 15px;
+        margin-bottom: 45px;
+    }
+
+    .historia_intro h2 {
+        font-size: 48px;
+    }
+
+    .historia_intro p {
+        font-size: 14px;
+    }
+
+    .historia_intro img {
+        height: 220px;
+    }
+
+    .periodo,
+    .periodo.invertido {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin: 50px 0;
+    }
+
+    .periodo img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .periodo_texto h3 {
+        font-size: 22px;
+    }
+
+    .periodo_texto p {
+        font-size: 14px;
+    }
+
+    .conclusao {
+        padding: 22px;
+        margin: 55px 0 35px;
+    }
+
+    .conclusao h3 {
+        font-size: 21px;
+    }
+
+    footer {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

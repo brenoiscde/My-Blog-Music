@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+
+.contato {
+    width: min(1100px, calc(100% - 48px));
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+
+.contato_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.categoria {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contato_info h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.15;
+    font-weight: 300;
+}
+
+.contato_info > p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.contato_detalhes {
+    margin-top: 25px;
+}
+
+.contato_detalhes h3,
+.redes_sociais h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.contato_detalhes p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+.contato_formulario {
+    background-color: #f7f5f2;
+    padding: 35px;
+}
+
+.contato_formulario h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contato_formulario > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contato_formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.campo label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    outline: none;
+    resize: vertical;
+    transition: border 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: chocolate;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #aaa;
+}
+
+.contato_formulario button {
+    padding: 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato_formulario button:hover {
+    background-color: chocolate;
+}
+
+
+.frase_final {
+    text-align: center;
+    margin: 80px auto;
+    width: min(800px, calc(100% - 48px));
+}
+
+.frase_final h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: clamp(25px, 4vw, 38px);
+    margin-bottom: 15px;
+}
+
+.frase_final p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: min(1200px, calc(100% - 48px));
+    margin: 30px auto;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+footer a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+
+    .contato {
+        gap: 35px;
+        width: calc(100% - 40px);
+    }
+
+    .contato_formulario {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contato {
+        grid-template-columns: 1fr;
+        width: calc(100% - 32px);
+        margin: 35px auto;
+        gap: 40px;
+    }
+
+    .contato_info h2 {
+        font-size: 45px;
+    }
+
+    .contato_formulario {
+        padding: 22px;
+    }
+
+    .contato_formulario h3 {
+        font-size: 21px;
+    }
+
+    .frase_final {
+        margin: 55px auto;
+    }
+
+    footer {
+        width: calc(100% - 32px);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
